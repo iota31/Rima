@@ -1,0 +1,179 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.loasisloos"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <!-- Bluetooth permissions for printer -->
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:6:5-68
+12-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:6:22-65
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:7:5-74
+13-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:7:22-71
+14    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+14-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:8:5-76
+14-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:8:22-73
+15    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+15-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:9:5-73
+15-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:9:22-70
+16
+17    <!-- For Android 12+ Bluetooth -->
+18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+18-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:12:5-79
+18-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:12:22-76
+19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+19-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:13:5-81
+19-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:13:22-78
+20
+21    <uses-feature
+21-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:5-87
+22        android:name="android.hardware.bluetooth"
+22-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:19-60
+23        android:required="true" />
+23-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:61-84
+24
+25    <uses-permission android:name="android.permission.INTERNET" />
+25-->[com.starmicronics:stario10:1.6.0] /Users/tushars/.gradle/caches/transforms-3/f0e3b616918663c9e50a440ca3a2093a/transformed/stario10-1.6.0/AndroidManifest.xml:9:5-67
+25-->[com.starmicronics:stario10:1.6.0] /Users/tushars/.gradle/caches/transforms-3/f0e3b616918663c9e50a440ca3a2093a/transformed/stario10-1.6.0/AndroidManifest.xml:9:22-64
+26
+27    <permission
+27-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+28        android:name="com.loasisloos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.loasisloos.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+32
+33    <application
+33-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:17:5-38:19
+34        android:allowBackup="true"
+34-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:18:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+36        android:dataExtractionRules="@xml/data_extraction_rules"
+36-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:19:9-65
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:fullBackupContent="@xml/backup_rules"
+39-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:20:9-54
+40        android:icon="@drawable/ic_app_icon"
+40-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:21:9-45
+41        android:label="@string/app_name"
+41-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:22:9-41
+42        android:roundIcon="@drawable/ic_app_icon"
+42-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:23:9-50
+43        android:supportsRtl="true"
+43-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:24:9-35
+44        android:testOnly="true"
+45        android:theme="@style/Theme.LOasisLoos" >
+45-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:25:9-48
+46        <activity
+46-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:28:9-37:20
+47            android:name="com.loasisloos.MainActivity"
+47-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:29:13-41
+48            android:configChanges="orientation|screenSize"
+48-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:32:13-59
+49            android:exported="true"
+49-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:30:13-36
+50            android:theme="@style/Theme.LOasisLoos" >
+50-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:31:14-53
+51            <intent-filter>
+51-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:33:13-36:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:34:17-69
+52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:34:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:35:17-77
+54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:35:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/tushars/.gradle/caches/transforms-3/7d6d17c62f5e47e1ddbfd5545bef7515/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:23:9-25:39
+58            android:name="androidx.activity.ComponentActivity"
+58-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/tushars/.gradle/caches/transforms-3/7d6d17c62f5e47e1ddbfd5545bef7515/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:24:13-63
+59            android:exported="true" />
+59-->[androidx.compose.ui:ui-test-manifest:1.6.0] /Users/tushars/.gradle/caches/transforms-3/7d6d17c62f5e47e1ddbfd5545bef7515/transformed/ui-test-manifest-1.6.0/AndroidManifest.xml:25:13-36
+60        <activity
+60-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/tushars/.gradle/caches/transforms-3/e2a97e2325067032f3da2fe341c40d3c/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+61            android:name="androidx.compose.ui.tooling.PreviewActivity"
+61-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/tushars/.gradle/caches/transforms-3/e2a97e2325067032f3da2fe341c40d3c/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+62            android:exported="true" />
+62-->[androidx.compose.ui:ui-tooling-android:1.6.0] /Users/tushars/.gradle/caches/transforms-3/e2a97e2325067032f3da2fe341c40d3c/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+63
+64        <provider
+64-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+65            android:name="androidx.startup.InitializationProvider"
+65-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+66            android:authorities="com.loasisloos.androidx-startup"
+66-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+67            android:exported="false" >
+67-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+69                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+69-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+70                android:value="androidx.startup" />
+70-->[androidx.emoji2:emoji2:1.3.0] /Users/tushars/.gradle/caches/transforms-3/6f7828c55e05945c3fdfc43d3d9265d5/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+71            <meta-data
+71-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/tushars/.gradle/caches/transforms-3/285f085280118d755ce82ea703c4f012/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+72                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+72-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/tushars/.gradle/caches/transforms-3/285f085280118d755ce82ea703c4f012/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+73                android:value="androidx.startup" />
+73-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/tushars/.gradle/caches/transforms-3/285f085280118d755ce82ea703c4f012/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+74            <meta-data
+74-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+75                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+76                android:value="androidx.startup" />
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+77        </provider>
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/tushars/.gradle/caches/transforms-3/26c8e84237c8e4fce06f7538f18656ef/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>

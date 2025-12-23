@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">L\'Oasis Loos</string>
+    
+    <!-- Categories -->
+    <string name="category_burger">Burger</string>
+    <string name="category_panini">Panini</string>
+    <string name="category_sandwichs">Sandwichs Chauds</string>
+    <string name="category_tacos">Tacos</string>
+    <string name="category_assiette">Assiette</string>
+    <string name="category_barquette">Barquette</string>
+    <string name="category_salade">Salade</string>
+    <string name="category_tex_mex">Tex Mex</string>
+    <string name="category_boissons">Boissons</string>
+    <string name="category_desserts">Desserts</string>
+    <string name="category_milkshakes">Milkshakes</string>
+    <string name="category_menu_kids">Menu Kids</string>
+    
+    <!-- Order Types -->
+    <string name="order_type_sur_place">Sur Place</string>
+    <string name="order_type_a_emporter">À Emporter</string>
+    
+    <!-- Combo Options -->
+    <string name="combo_seul">Seul</string>
+    <string name="combo_avec_frites">+ Frites</string>
+    <string name="combo_menu">Menu</string>
+    
+    <!-- Bread Options -->
+    <string name="bread_galette">Galette</string>
+    <string name="bread_naan">Naan</string>
+    <string name="bread_falluche">Falluche</string>
+    
+    <!-- Actions -->
+    <string name="add_to_cart">Ajouter</string>
+    <string name="remove">Supprimer</string>
+    <string name="print_order">Imprimer</string>
+    <string name="clear_cart">Vider</string>
+    <string name="confirm">Confirmer</string>
+    <string name="cancel">Annuler</string>
+    
+    <!-- Labels -->
+    <string name="cart">Panier</string>
+    <string name="total">Total</string>
+    <string name="quantity">Quantité</string>
+    <string name="customer_name">Nom du client</string>
+    <string name="customer_note">Remarque</string>
+    <string name="table_number">Table N°</string>
+    <string name="select_sauces">Sauces</string>
+    <string name="select_meat">Viandes</string>
+    <string name="select_supplements">Suppléments</string>
+    <string name="select_gratiné">Gratiné</string>
+    <string name="select_drink">Boisson</string>
+    
+    <!-- Printer -->
+    <string name="printer_settings">Imprimante</string>
+    <string name="printer_connected">Connectée</string>
+    <string name="printer_disconnected">Déconnectée</string>
+    <string name="printer_connecting">Connexion…</string>
+    <string name="printer_searching">Recherche…</string>
+    <string name="print_success">Commande imprimée!</string>
+    <string name="print_error">Erreur d\'impression</string>
+</resources>

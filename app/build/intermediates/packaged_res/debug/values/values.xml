@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_to_cart">Ajouter</string>
+    <string name="app_name">L\'Oasis Loos</string>
+    <string name="bread_falluche">Falluche</string>
+    <string name="bread_galette">Galette</string>
+    <string name="bread_naan">Naan</string>
+    <string name="cancel">Annuler</string>
+    <string name="cart">Panier</string>
+    <string name="category_assiette">Assiette</string>
+    <string name="category_barquette">Barquette</string>
+    <string name="category_boissons">Boissons</string>
+    <string name="category_burger">Burger</string>
+    <string name="category_desserts">Desserts</string>
+    <string name="category_menu_kids">Menu Kids</string>
+    <string name="category_milkshakes">Milkshakes</string>
+    <string name="category_panini">Panini</string>
+    <string name="category_salade">Salade</string>
+    <string name="category_sandwichs">Sandwichs Chauds</string>
+    <string name="category_tacos">Tacos</string>
+    <string name="category_tex_mex">Tex Mex</string>
+    <string name="clear_cart">Vider</string>
+    <string name="combo_avec_frites">+ Frites</string>
+    <string name="combo_menu">Menu</string>
+    <string name="combo_seul">Seul</string>
+    <string name="confirm">Confirmer</string>
+    <string name="customer_name">Nom du client</string>
+    <string name="customer_note">Remarque</string>
+    <string name="order_type_a_emporter">À Emporter</string>
+    <string name="order_type_sur_place">Sur Place</string>
+    <string name="print_error">Erreur d\'impression</string>
+    <string name="print_order">Imprimer</string>
+    <string name="print_success">Commande imprimée!</string>
+    <string name="printer_connected">Connectée</string>
+    <string name="printer_connecting">Connexion…</string>
+    <string name="printer_disconnected">Déconnectée</string>
+    <string name="printer_searching">Recherche…</string>
+    <string name="printer_settings">Imprimante</string>
+    <string name="quantity">Quantité</string>
+    <string name="remove">Supprimer</string>
+    <string name="select_drink">Boisson</string>
+    <string name="select_gratiné">Gratiné</string>
+    <string name="select_meat">Viandes</string>
+    <string name="select_sauces">Sauces</string>
+    <string name="select_supplements">Suppléments</string>
+    <string name="table_number">Table N°</string>
+    <string name="total">Total</string>
+    <style name="Theme.LOasisLoos" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+</resources>
