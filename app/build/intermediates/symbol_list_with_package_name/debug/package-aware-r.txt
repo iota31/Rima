@@ -1012,6 +1012,7 @@ string default_popup_window_title
 string dialog
 string dropdown_menu
 string expanded
+string footer_message
 string in_progress
 string indeterminate
 string m3c_bottom_sheet_pane_title
@@ -1033,6 +1034,7 @@ string quantity
 string range_end
 string range_start
 string remove
+string restaurant_address
 string search_bar_search
 string search_menu_title
 string select_drink
@@ -1065,6 +1067,7 @@ string tooltip_label
 string tooltip_long_press_label
 string tooltip_pane_description
 string total
+string tva_notice
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

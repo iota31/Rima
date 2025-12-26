@@ -29,6 +29,7 @@ string combo_seul
 string confirm
 string customer_name
 string customer_note
+string footer_message
 string order_type_a_emporter
 string order_type_sur_place
 string print_error
@@ -41,6 +42,7 @@ string printer_searching
 string printer_settings
 string quantity
 string remove
+string restaurant_address
 string select_drink
 string select_gratiné
 string select_meat
@@ -48,6 +50,7 @@ string select_sauces
 string select_supplements
 string table_number
 string total
+string tva_notice
 style Theme.LOasisLoos
 xml backup_rules
 xml data_extraction_rules

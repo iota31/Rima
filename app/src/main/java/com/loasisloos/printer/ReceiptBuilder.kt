@@ -17,22 +17,31 @@ class ReceiptBuilder {
         val docBuilder = DocumentBuilder()
         val printerBuilder = PrinterBuilder()
 
-        // 1. Header (Uber Eats Style)
+        // 1. Header
         printerBuilder.styleAlignment(Alignment.Center)
         printerBuilder.actionPrintText("L'OASIS LOOS\n")
-        printerBuilder.styleAlignment(Alignment.Left)
+        printerBuilder.actionPrintText("123 Rue de Exemple, 59120 Loos\n") // Todo: Get from resource if possible or hardcode
+        printerBuilder.actionPrintText("\n")
+
+        // Date & Ticket Info
+        val formatter = java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")
+        val dateStr = order.createdAt.format(formatter)
         
-        // Large Order ID & Name
+        printerBuilder.styleAlignment(Alignment.Left)
+        printerBuilder.actionPrintText("Date: $dateStr\n")
+        printerBuilder.actionPrintText("Ticket N°: ${order.id}\n")
+        printerBuilder.actionPrintText("--------------------------------\n")
+        
+        // Order Type (LIVRAISON / SUR PLACE)
+        printerBuilder.styleAlignment(Alignment.Center)
+        
+        // Large Order ID & Name for Kitchen
         printerBuilder.add(
             PrinterBuilder()
                 .styleMagnification(MagnificationParameter(2, 2)) // Large text
                 .actionPrintText("${order.id}    ${order.customerName ?: ""}\n")
         )
         
-        printerBuilder.actionPrintText("--------------------------------\n")
-        
-        // Order Type (LIVRAISON / SUR PLACE)
-        printerBuilder.styleAlignment(Alignment.Center)
         printerBuilder.add(
              PrinterBuilder()
                 .styleMagnification(MagnificationParameter(2, 2))
@@ -90,8 +99,6 @@ class ReceiptBuilder {
         }
         
         // 4. Totals
-        // 4. Totals
-        // 4. Totals
         printerBuilder.styleAlignment(Alignment.Right)
         printerBuilder.styleBold(true)
         printerBuilder.add(
@@ -100,6 +107,11 @@ class ReceiptBuilder {
                 .actionPrintText("TOTAL: ${String.format("%.2f€", order.total)}\n")
         )
         printerBuilder.styleBold(false)
+        printerBuilder.actionPrintText("TVA incluse\n") // TVA Notice
+        
+        // Footer
+        printerBuilder.styleAlignment(Alignment.Center)
+        printerBuilder.actionPrintText("\nMerci de votre visite !\n")
         printerBuilder.styleAlignment(Alignment.Left)
         
         printerBuilder.actionPrintText("\n\n")
@@ -111,16 +123,6 @@ class ReceiptBuilder {
         docBuilder.addPrinter(printerBuilder)
         builder.addDocument(docBuilder)
 
-        // Wrapper call to get encoded commands (String or ByteArray depending on implementation)
-        // Check StarIO10 docs: getCommands() returns String by default (XML like) for some, 
-        // but let's assume ByteArray compatibility in PrinterManager handle.
-        // Actually StarIO10 usually returns String commands for some interfaces.
-        // Let's ensure PrinterManager takes String if getCommands returns String.
-        // But getCommands() in previous artifact returned ByteArray? 
-        // Let's assume it returns String or ByteArray and PrinterManager accepts it.
-        // Wait, StarXpandCommandBuilder.getCommands() returns String.
-        // I should update PrinterManager to accept String commands!
-        
         return builder.getCommands()
     }
 }

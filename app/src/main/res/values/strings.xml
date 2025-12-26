@@ -59,4 +59,9 @@
     <string name="printer_searching">Recherche…</string>
     <string name="print_success">Commande imprimée!</string>
     <string name="print_error">Erreur d\'impression</string>
+
+    <!-- Receipt -->
+    <string name="restaurant_address">123 Rue de Exemple, 59120 Loos</string>
+    <string name="footer_message">Merci de votre visite !</string>
+    <string name="tva_notice">TVA incluse</string>
 </resources>
