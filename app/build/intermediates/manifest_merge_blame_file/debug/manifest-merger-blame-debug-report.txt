@@ -8,34 +8,31 @@
 8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
-11    <!-- Bluetooth permissions for printer -->
+11    <!-- Bluetooth permissions -->
 12    <uses-permission android:name="android.permission.BLUETOOTH" />
 12-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:6:5-68
 12-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:6:22-65
 13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 13-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:7:5-74
 13-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:7:22-71
-14    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-14-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:8:5-76
-14-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:8:22-73
-15    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-15-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:9:5-73
-15-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:9:22-70
-16
-17    <!-- For Android 12+ Bluetooth -->
-18    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-18-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:12:5-79
-18-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:12:22-76
-19    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-19-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:13:5-81
-19-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:13:22-78
+14
+15    <!-- Android 12+ -->
+16    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+16-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:10:5-76
+16-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:10:22-73
+17    <uses-permission
+17-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:11:5-13:58
+18        android:name="android.permission.BLUETOOTH_SCAN"
+18-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:12:9-57
+19        android:usesPermissionFlags="neverForLocation" />
+19-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:13:9-55
 20
 21    <uses-feature
-21-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:5-87
+21-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:5-17:35
 22        android:name="android.hardware.bluetooth"
-22-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:19-60
+22-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:16:9-50
 23        android:required="true" />
-23-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:15:61-84
+23-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:17:9-32
 24
 25    <uses-permission android:name="android.permission.INTERNET" />
 25-->[com.starmicronics:stario10:1.6.0] /Users/tushars/.gradle/caches/transforms-3/f0e3b616918663c9e50a440ca3a2093a/transformed/stario10-1.6.0/AndroidManifest.xml:9:5-67
@@ -53,47 +50,47 @@
 31-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 32
 33    <application
-33-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:17:5-38:19
+33-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:19:5-40:19
 34        android:allowBackup="true"
-34-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:18:9-35
+34-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:20:9-35
 35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 35-->[androidx.core:core:1.12.0] /Users/tushars/.gradle/caches/transforms-3/0689a9fd0de0e6fef5d369e599568f09/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 36        android:dataExtractionRules="@xml/data_extraction_rules"
-36-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:19:9-65
+36-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:21:9-65
 37        android:debuggable="true"
 38        android:extractNativeLibs="false"
 39        android:fullBackupContent="@xml/backup_rules"
-39-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:20:9-54
+39-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:22:9-54
 40        android:icon="@drawable/ic_app_icon"
-40-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:21:9-45
+40-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:23:9-45
 41        android:label="@string/app_name"
-41-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:22:9-41
+41-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:24:9-41
 42        android:roundIcon="@drawable/ic_app_icon"
-42-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:23:9-50
+42-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:25:9-50
 43        android:supportsRtl="true"
-43-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:24:9-35
+43-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:26:9-35
 44        android:testOnly="true"
 45        android:theme="@style/Theme.LOasisLoos" >
-45-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:25:9-48
+45-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:27:9-48
 46        <activity
-46-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:28:9-37:20
+46-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:30:9-39:20
 47            android:name="com.loasisloos.MainActivity"
-47-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:29:13-41
+47-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:31:13-41
 48            android:configChanges="orientation|screenSize"
-48-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:32:13-59
+48-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:34:13-59
 49            android:exported="true"
-49-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:30:13-36
+49-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:32:13-36
 50            android:theme="@style/Theme.LOasisLoos" >
-50-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:31:14-53
+50-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:33:14-53
 51            <intent-filter>
-51-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:33:13-36:29
+51-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:35:13-38:29
 52                <action android:name="android.intent.action.MAIN" />
-52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:34:17-69
-52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:34:25-66
+52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:36:17-69
+52-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:36:25-66
 53
 54                <category android:name="android.intent.category.LAUNCHER" />
-54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:35:17-77
-54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:35:27-74
+54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:37:17-77
+54-->/Users/tushars/PycharmProjects/Rima/app/src/main/AndroidManifest.xml:37:27-74
 55            </intent-filter>
 56        </activity>
 57        <activity
